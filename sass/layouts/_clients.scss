@@ -1,0 +1,51 @@
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -15px;
+}
+
+.client-item {
+  // border-radius: 0px 0px 4px 4px;
+
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 12 * 15px) / 6);
+    margin: 15px;
+  }
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  border: 1px solid $icons-gray;
+  border-radius: 4px;
+
+  transition: $site-transition;
+
+  &:hover,
+  &:focus {
+    border-color: $hover-color;
+    outline-color: $hover-color;
+  }
+}
+
+.client-icon {
+  fill: $icons-gray;
+}
+
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+  fill: $hover-color;
+}

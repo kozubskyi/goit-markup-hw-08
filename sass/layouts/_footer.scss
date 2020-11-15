@@ -1,0 +1,16 @@
+.footer {
+  background-color: $section-dark-bg-color;
+  padding-top: 44px;
+  padding-bottom: 60px;
+
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -30px;
+
+    @media screen and (min-width: 1200px) {
+      margin: -15px;
+    }
+  }
+}

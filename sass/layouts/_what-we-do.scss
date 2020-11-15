@@ -1,0 +1,32 @@
+.what-we-do-section {
+  padding-top: 0;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.what-we-do-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -15px;
+
+  .item {
+    position: relative;
+    width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+  }
+
+  .item-title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    padding: 27px 0;
+    color: white;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    bottom: 0;
+  }
+}

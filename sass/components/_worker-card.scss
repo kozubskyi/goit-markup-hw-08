@@ -1,0 +1,73 @@
+.worker-card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  @media screen and (max-width: 767px) {
+    width: calc(100% - 2 * 15px);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
+}
+
+.worker-info {
+  font-size: 16px;
+  line-height: 1.19;
+  background-color: white;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.worker-name {
+  margin-bottom: 10px;
+}
+
+.worker-position {
+  color: $secondary-text-color;
+  margin-bottom: 16px;
+}
+
+.social-networks-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-network-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-network-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition: $site-transition;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+    outline-color: $hover-color;
+  }
+}
+
+.social-network-icon {
+  fill: $icons-gray;
+}
+
+.social-network-link:hover .social-network-icon,
+.social-network-link:focus .social-network-icon {
+  fill: white;
+}

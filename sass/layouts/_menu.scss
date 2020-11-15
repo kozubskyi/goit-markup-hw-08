@@ -1,0 +1,53 @@
+.site-menu {
+  font-size: 18px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+    .item:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.site-menu-link {
+  font-size: 14px;
+  line-height: 1.17;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: $site-transition;
+
+    &:hover,
+    &:focus,
+    &.current {
+      color: $hover-color;
+      outline-color: $hover-color;
+    }
+
+    &.current::after {
+      content: "";
+      display: block;
+      position: absolute;
+
+      width: 100%;
+      height: 4px;
+      left: 0;
+      bottom: -2%;
+      border-radius: 2px;
+      background-color: $hover-color;
+      outline-color: $hover-color;
+    }
+  }
+}

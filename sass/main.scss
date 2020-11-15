@@ -1,0 +1,24 @@
+@import "./base/modern-normalize";
+@import "./utils/variables";
+@import "./base/common";
+@import "./layouts/header";
+@import "./components/logo";
+@import "./components/mobile-menu";
+@import "./layouts/menu";
+@import "./components/header-contacts";
+
+@import "./layouts/hero";
+@import "./components/button";
+@import "./layouts/principles";
+@import "./layouts/what-we-do";
+@import "./layouts/our-team";
+@import "./components/worker-card";
+@import "./layouts/clients";
+
+@import "./layouts/footer";
+@import "./components/footer-logo-address";
+@import "./components/footer-social-networks";
+@import "./components/footer-mailing";
+
+@import "./components/modal";
+@import "./components/modal-form";

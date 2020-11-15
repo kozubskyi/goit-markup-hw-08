@@ -1,0 +1,38 @@
+.logo {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.17;
+  color: $hover-color;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  outline-color: $hover-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.header-logo-studio {
+  color: $primary-text-color;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 4px;
+
+  &-studio {
+    color: white;
+  }
+}
+
+.header-logo {
+  margin-right: 93px;
+  outline-color: $hover-color;
+
+  &-studio {
+    color: $primary-text-color;
+  }
+}

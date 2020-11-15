@@ -1,0 +1,49 @@
+.footer-logo-address {
+    text-align: center;
+
+  @media screen and (max-width: 767px) {
+    width: calc(100% - 2 * 30px);
+    margin: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 30px) / 2);
+    margin: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+    text-align: left;
+  }
+}
+
+address {
+  color: white;
+  font-style: normal;
+}
+
+.physical-address {
+  display: inline-block;
+  margin-bottom: 8px;
+
+  transition: $site-transition;
+
+  &:hover,
+  &:focus {
+    color: $hover-color;
+    outline-color: $hover-color;
+  }
+}
+
+.footer-e-mail,
+.footer-tel {
+  display: inline-block;
+  color: $transparent-gray-color;
+
+  transition: $site-transition;
+}
+
+.footer-e-mail {
+  margin-bottom: 8px;
+}
