@@ -814,7 +814,7 @@ svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: -30px;
+  margin: -30px -15px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -830,7 +830,7 @@ svg {
 @media screen and (max-width: 767px) {
   .footer-logo-address {
     width: calc(100% - 2 * 30px);
-    margin: 30px;
+    margin: 30px -15px;
   }
 }
 
@@ -891,7 +891,7 @@ address {
 @media screen and (max-width: 767px) {
   .footer-social-networks {
     width: calc(100% - 2 * 30px);
-    margin: 30px;
+    margin: 30px -15px;
   }
 }
 
@@ -976,7 +976,7 @@ address {
 @media screen and (max-width: 767px) {
   .footer-mailing {
     width: calc(100% - 2 * 30px);
-    margin: 30px;
+    margin: 30px -15px;
   }
 }
 
