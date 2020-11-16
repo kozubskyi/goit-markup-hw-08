@@ -1022,7 +1022,8 @@ address {
 }
 
 .footer-email {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   padding: 15px 16px;
   margin-bottom: 20px;
   color: white;
@@ -1033,7 +1034,7 @@ address {
 
 @media screen and (min-width: 1200px) {
   .footer-email {
-    width: 358px;
+    max-width: 358px;
     margin-right: 12px;
     margin-bottom: 0;
   }
