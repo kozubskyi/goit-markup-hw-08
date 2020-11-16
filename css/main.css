@@ -1175,7 +1175,8 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1193,7 +1194,6 @@ address {
 
 .footer-email {
   width: 100%;
-  max-width: 450px;
   padding: 15px 16px;
   margin-bottom: 20px;
   color: white;
