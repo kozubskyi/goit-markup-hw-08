@@ -1297,6 +1297,9 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 0;
   left: 0;
   width: 100%;
@@ -1313,36 +1316,25 @@ address {
   pointer-events: none;
 }
 
-@media screen and (max-width: 767px) {
-  .backdrop {
-    padding-top: 93px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .backdrop {
-    padding-top: 208px;
-    padding-right: 159px;
-    padding-left: 159px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .backdrop {
-    padding-top: 221px;
-    padding-right: 536px;
-    padding-left: 536px;
-  }
-}
-
 .modal {
+  width: 450px;
   padding: 40px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal-btn-close {
